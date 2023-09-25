@@ -1,9 +1,5 @@
-package progetto1;
+package progetto1roselli;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )

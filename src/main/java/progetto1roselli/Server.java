@@ -1,10 +1,12 @@
+package progetto1roselli;
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
 
 public class Server {
-    int port = 6576;
+    int port = 6567;
     
     ServerSocket server = null;
     Socket client = null;
@@ -41,7 +43,7 @@ public class Server {
 
             stringaModificata = stringaRicevuta.toUpperCase();
             System.out.println("7 Invio la stringa modificata al client ...");
-            outVersoClient.writeByte(stringaModificata+'\n');
+            outVersoClient.writeBytes(stringaModificata+'\n');
 
             System.out.println("9 SERVER: fine elaborazione.");
             client.close();
